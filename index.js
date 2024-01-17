@@ -43,5 +43,5 @@ const { Parser } = require("json2csv");
 
   const parser = new Parser();
   const csv = parser.parse(data);
-  fs.writeFileSync("loveLove.csv", csv);
+  fs.writeFileSync("blog.csv", csv);
 })();
