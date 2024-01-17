@@ -13,7 +13,7 @@ const { Parser } = require("json2csv");
   const data = [];
   for (const url of urls) {
     const page = await context.newPage();
-    await page.goto(url);
+    await page.goto(url, { timeout: 60000 });
 
     const pageTitle = await page.locator(".lead");
     const date = await page.locator(".date.wf-a");
