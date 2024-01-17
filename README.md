@@ -24,5 +24,6 @@ const urls = [
     "https://sakurazaka46.com/s/s46/diary/blog/list?ima=0000&page=2&ct=67&cd=blog",
   ];
 ```
-の部分を収集したいブログのURLに変更する。
+の部分を収集したいブログのURLに変更する。  
+
 ネットワークの接続が悪かったりすると、スクレイピング中にタイムアウトになったりするので、ご留意ください。
