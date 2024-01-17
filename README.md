@@ -7,6 +7,8 @@ node.jsを使用したスクレイピングツール。
 ```
 git clone git@github.com:yukiyuki925/node-scroll.git
 ↓
+cd node-scroll
+↓
 npm run dev
 ```
 npm run dev でツール起動、スクレイピングを行い、csvファイルに書き込む。
@@ -23,3 +25,4 @@ const urls = [
   ];
 ```
 の部分を収集したいブログのURLに変更する。
+ネットワークの接続が悪かったりすると、スクレイピング中にタイムアウトになったりするので、ご留意ください。
