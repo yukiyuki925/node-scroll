@@ -5,6 +5,7 @@ const { Parser } = require("json2csv");
 (async () => {
   const browser = await chromium.launch({ headless: false, slowMo: 500 });
   const context = await browser.newContext();
+  // urlを設定
   const urls = [
     "https://sakurazaka46.com/s/s46/diary/blog/list?ima=0000&ct=67",
     "https://sakurazaka46.com/s/s46/diary/blog/list?ima=0000&page=1&ct=67&cd=blog",
