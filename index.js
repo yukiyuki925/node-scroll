@@ -17,6 +17,7 @@ const { Parser } = require("json2csv");
     // 待機時間設定
     await page.goto(url, { timeout: 60000 });
 
+    // HTMLの要素を指定
     const pageTitle = await page.locator(".lead");
     const date = await page.locator(".date.wf-a");
     const title = await page.locator(".date-title > .title");
