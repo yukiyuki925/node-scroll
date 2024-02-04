@@ -33,6 +33,7 @@ const { Parser } = require("json2csv");
       const pageTop = title.locator(`nth=${i}`);
       const titleText = await pageTop.textContent();
 
+      // 配列にpush
       data.push({
         date: dateText,
         title: titleText,
@@ -46,5 +47,6 @@ const { Parser } = require("json2csv");
 
   const parser = new Parser();
   const csv = parser.parse(data);
+  // csvに書き込む
   fs.writeFileSync("blog.csv", csv);
 })();
