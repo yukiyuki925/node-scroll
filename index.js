@@ -12,6 +12,7 @@ const { Parser } = require("json2csv");
     "https://sakurazaka46.com/s/s46/diary/blog/list?ima=0000&page=2&ct=67&cd=blog",
   ];
   const data = [];
+  // urlsを繰り返し処理で一つずつ見ていく
   for (const url of urls) {
     const page = await context.newPage();
     // 待機時間設定
