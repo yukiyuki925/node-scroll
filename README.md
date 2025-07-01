@@ -6,7 +6,7 @@ node.js を使用したスクレイピングツール。
 ##使用方法
 
 ```
-git clone git@github.com:yukiyuki925/node-scroll.git
+git clone https://github.com/yukiyuki925/node-scroll.git
 ↓
 cd node-scroll
 ↓
